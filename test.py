@@ -1,4 +1,7 @@
 import unittest
+from coal_mine_safety import SafetySystem
+
+
 class TestCoalMineSafetySystem(unittest.TestCase):
     def setUp(self):
         self.system = SafetySystem()
@@ -39,6 +42,7 @@ class TestCoalMineSafetySystem(unittest.TestCase):
         data = {"temperature": 30.0, "gas_level": 100.0, "humidity": 85.0}
         status = self.system.evaluate_safety(data)
         self.assertEqual(status, "ALERT: Unsafe Humidity", "System failed to detect high humidity")
+
 
 if __name__ == "__main__":
     unittest.main()
