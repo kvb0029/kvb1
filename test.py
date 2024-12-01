@@ -1,5 +1,5 @@
 import unittest
-from coal_mine_safety import SafetySystem
+from cmss import SafetySystem
 
 
 class TestCoalMineSafetySystem(unittest.TestCase):
